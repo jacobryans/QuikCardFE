@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff92feaf.chunk.css",
+    "main.js": "/static/js/main.23ab59c0.chunk.js",
+    "main.js.map": "/static/js/main.23ab59c0.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.54647d8a.chunk.css": "/static/css/2.54647d8a.chunk.css",
+    "static/js/2.4a0fa7b5.chunk.js": "/static/js/2.4a0fa7b5.chunk.js",
+    "static/js/2.4a0fa7b5.chunk.js.map": "/static/js/2.4a0fa7b5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c055e04899dfb1fb6014850c4913bff8.js": "/precache-manifest.c055e04899dfb1fb6014850c4913bff8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.54647d8a.chunk.css.map": "/static/css/2.54647d8a.chunk.css.map",
+    "static/css/main.ff92feaf.chunk.css.map": "/static/css/main.ff92feaf.chunk.css.map",
+    "static/media/QuikCardLogo.png": "/static/media/QuikCardLogo.e432cbf8.png",
+    "static/media/QuikCardLogoText.png": "/static/media/QuikCardLogoText.e4b0692e.png"
+  }
+}

@@ -1,0 +1,18 @@
+.app-nav {
+    background: #379683;
+    padding: 0 2.5vw 0 2.5vw !important;
+}
+
+html, .site-wrapper {
+    height: '100%';
+    background-color: #EDF5E1 !important;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.navbar-brand img {
+    height: 110px;
+    width: 125px;
+}
