@@ -16,7 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 70vw;
+  width: 60vw;
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   margin: 5vh auto;
@@ -58,6 +59,7 @@ export default class AddCard extends React.Component {
         e.preventDefault()
         if(this.props.cards.blacklist.indexOf(this.state.card.cardNumber) !== -1) {
             await this.setState({toast: 'This card has already been sent', toastType: 'warning'})
+            await setTimeout(() => this.setState({toast: '', toastType: ''}), 5000)
             return
         }
         let prevCards = this.props.cards
@@ -73,6 +75,8 @@ export default class AddCard extends React.Component {
             ]
         }
         await this.props.saveCards(prevCards);
+        await this.setState({toast: 'You successfully added your card!', toastType: 'success'})
+        await setTimeout(() => this.setState({toast: '', toastType: ''}), 5000)
         this.props.history.push('/cards')
     }
 

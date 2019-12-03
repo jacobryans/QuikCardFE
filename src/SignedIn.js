@@ -5,6 +5,7 @@ import { appConfig, ME_FILENAME, CARDS_FILENAME } from './constants'
 import AddCard from './AddCard'
 import CardList from './CardList'
 import NavBar from './NavBar'
+import {withRouter} from 'react-router-dom'
 
 
 class SignedIn extends Component {
@@ -29,6 +30,9 @@ class SignedIn extends Component {
   async componentWillMount() {
     await this.loadMe()
     await this.loadCards()
+    if(this.userSession.isUserSignedIn() && this.props.location.pathname === `/`) {
+      this.props.history.push('/cards')
+    }
   }
 
   loadMe() {
@@ -135,4 +139,4 @@ class SignedIn extends Component {
   }
 }
 
-export default SignedIn
+export default withRouter(SignedIn)

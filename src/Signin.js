@@ -14,8 +14,8 @@ const Container = styled.div`
 
 export default class Signin extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.userSession = new UserSession({ appConfig })
     this.state = {
       isModalOpen: false
